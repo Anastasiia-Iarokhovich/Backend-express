@@ -4,17 +4,13 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "nodemon server.ts"
+    "start": "nodemon server.ts",
+    "start-client": "ts-node client.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fullcalendar/core": "^6.1.14",
-    "@fullcalendar/daygrid": "^6.1.14",
-    "@fullcalendar/interaction": "^6.1.14",
-    "@fullcalendar/list": "^6.1.14",
-    "@fullcalendar/timegrid": "^6.1.14",
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.2",
     "@types/webgl-ext": "^0.0.37",
