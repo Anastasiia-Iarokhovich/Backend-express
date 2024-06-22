@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=test24password
+      - POSTGRES_USER=calendar
+      - POSTGRES_DB=calendar
+    ports:
+      - "5438:5432"
+
