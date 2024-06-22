@@ -1,4 +1,4 @@
-export class Holiday {
+export class WorkingWeekend {
     
     id?: number;
     name?: string;
@@ -10,5 +10,3 @@ export class Holiday {
       this.date = date;
     }
 }
-  
-  
