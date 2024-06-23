@@ -1,12 +1,13 @@
 export class WorkingHour {
-    
-    id?: number;
-    month?: string;
-    sumOfHours?: number;
-  
-    constructor(id?: number, month?: string, sumOfHours?: number) {
-      this.id = id;
-      this.month = month;
-      this.sumOfHours = sumOfHours;
-    }
+  id?: number;
+  year?: number;
+  month?: number;
+  sumOfHours?: number;
+
+  constructor(id?: number, year?: number, month?: number, sumOfHours?: number) {
+    this.id = id;
+    this.year = year;
+    this.month = month;
+    this.sumOfHours = sumOfHours;
+  }
 }

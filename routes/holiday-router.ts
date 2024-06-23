@@ -1,5 +1,5 @@
 import express from 'express';
-import HolidayController from '../controllers/holidayController';
+import HolidayController from '../controllers/holiday-controller';
 
 const holidayRouter = express.Router();
 

@@ -1,12 +1,11 @@
 export class WorkingWeekend {
-    
-    id?: number;
-    name?: string;
-    date?: Date;
-  
-    constructor(id?: number, name?: string, date?: Date) {
-      this.id = id;
-      this.name = name;
-      this.date = date;
-    }
+  id?: number;
+  date?: Date;
+  isWeekend?: boolean;
+
+  constructor(id?: number, date?: Date, isWeekend?: boolean) {
+    this.id = id;
+    this.date = date;
+    this.isWeekend = isWeekend;
+  }
 }
