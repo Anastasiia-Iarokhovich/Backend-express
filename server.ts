@@ -3,11 +3,12 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import workingWeekendRouter from './routes/working-weekend-router';
 import holidayRouter from './routes/holiday-router';
-import { createHolidaysTable } from './db-tables/create-holidays-table';
-import { createWorkingWeekendsTable } from './db-tables/create-working-weekends-table';
+import { createHolidaysTable } from './sql-queries/create-holidays-table';
+import { createWorkingWeekendsTable } from './sql-queries/create-working-weekends-table';
 import workingHourRouter from './routes/working-hour-router';
-import { createMonthlyWorkingHoursTable } from './db-tables/create-working-hours-table';
-import { addColumnToHolidaysTable } from './db-tables/add-column-to-holidays-table';
+import { createMonthlyWorkingHoursTable } from './sql-queries/create-working-hours-table';
+import { addColumnToHolidaysTable } from './sql-queries/add-column-to-holidays-table';
+import { insertHolidays } from './sql-queries/insert-holidays';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,6 +25,7 @@ const createTables = async () => {
   await createWorkingWeekendsTable();
   await createMonthlyWorkingHoursTable();
   // await addColumnToHolidaysTable(); // Добавление нового столбца
+  // await insertHolidays();
 };
 
 createTables()

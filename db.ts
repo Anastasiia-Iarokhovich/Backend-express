@@ -5,7 +5,8 @@ const pool = new Pool({
   host: 'localhost',
   database: 'calendar',
   password: 'test24password',
-  port: 5438, //5432
+  port: 5438,
 });
 
 export const query = (text: string, params?: any[]) => pool.query(text, params);
+//module.exports = pool;
