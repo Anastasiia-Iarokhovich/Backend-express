@@ -5,9 +5,7 @@ import { Holiday } from '../models/holiday';
 export const insertHolidays = async () => {
 
     const hd = new Holidays('RU');
-
     const years = [2023, 2024];
-
     let holidays: Holiday[] = [];
 
     years.forEach(year => {
@@ -16,10 +14,15 @@ export const insertHolidays = async () => {
             if (!holiday.date) {
                 throw new Error(`Holiday date is undefined for holiday: ${holiday.name}`);
             }
+            const date = new Date(Date.UTC(
+                new Date(holiday.date).getFullYear(),
+                new Date(holiday.date).getMonth(),
+                new Date(holiday.date).getDate()
+            ));
             return new Holiday(
                 undefined,
                 holiday.name,
-                new Date(holiday.date),
+                date,
                 holiday.type === 'public'
             );
         });

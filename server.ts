@@ -24,8 +24,7 @@ const createTables = async () => {
   await createHolidaysTable();
   await createWorkingWeekendsTable();
   await createMonthlyWorkingHoursTable();
-  // await addColumnToHolidaysTable(); // Добавление нового столбца
-  // await insertHolidays();
+  // await insertHolidays(); // Добавление праздников
 };
 
 createTables()
