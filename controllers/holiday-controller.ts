@@ -15,7 +15,7 @@ class HolidayController {
   async addHoliday(req: Request, res: Response) {
     try {
       const { name, date, isWeekend } = req.body;
-      const result = await query('INSERT INTO holidays (name, date, isWeekend) VALUES ($1, $2) RETURNING *', [name, date, isWeekend]);
+      const result = await query('INSERT INTO holidays (name, date, isWeekend) VALUES ($1, $2, $3) RETURNING *', [name, date, isWeekend]);
       res.status(201).json(result.rows[0]);
     } catch (error) {
       res.status(400).json({ error: 'Bad request' });

@@ -1,0 +1,77 @@
+holidays:
+  - id: 161
+    name: Новый год
+    date: '2022-12-31T21:00:00.000Z'
+    isweekend: true
+  - id: 162
+    name: Новогодние каникулы
+    date: '2023-01-01T21:00:00.000Z'
+    isweekend: true
+  - id: 163
+    name: Рождество Христово
+    date: '2023-01-06T21:00:00.000Z'
+    isweekend: true
+  - id: 164
+    name: Новогодние каникулы
+    date: '2023-01-07T21:00:00.000Z'
+    isweekend: true
+  - id: 165
+    name: День защитника Отечества
+    date: '2023-02-22T21:00:00.000Z'
+    isweekend: true
+  - id: 166
+    name: Международный женский день
+    date: '2023-03-07T21:00:00.000Z'
+    isweekend: true
+  - id: 167
+    name: День весны и труда
+    date: '2023-04-30T21:00:00.000Z'
+    isweekend: true
+  - id: 168
+    name: День Победы
+    date: '2023-05-08T21:00:00.000Z'
+    isweekend: true
+  - id: 169
+    name: День России
+    date: '2023-06-11T21:00:00.000Z'
+    isweekend: true
+  - id: 170
+    name: День народного единства
+    date: '2023-11-03T21:00:00.000Z'
+    isweekend: true
+  - id: 171
+    name: Новый год
+    date: '2023-12-31T21:00:00.000Z'
+    isweekend: true
+  - id: 172
+    name: Новогодние каникулы
+    date: '2024-01-01T21:00:00.000Z'
+    isweekend: true
+  - id: 173
+    name: Рождество Христово
+    date: '2024-01-06T21:00:00.000Z'
+    isweekend: true
+  - id: 174
+    name: Новогодние каникулы
+    date: '2024-01-07T21:00:00.000Z'
+    isweekend: true
+  - id: 175
+    name: День защитника Отечества
+    date: '2024-02-22T21:00:00.000Z'
+    isweekend: true
+  - id: 176
+    name: Международный женский день
+    date: '2024-03-07T21:00:00.000Z'
+    isweekend: true
+  - id: 178
+    name: День Победы
+    date: '2024-05-08T21:00:00.000Z'
+    isweekend: true
+  - id: 179
+    name: День России
+    date: '2024-06-11T21:00:00.000Z'
+    isweekend: true
+  - id: 180
+    name: День народного единства
+    date: '2024-11-03T21:00:00.000Z'
+    isweekend: true
